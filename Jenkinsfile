@@ -85,6 +85,13 @@ pipeline {
                 }
             }
         }
+        stage('Show active containers') {
+          steps {
+            script{
+              sh "docker ps"
+            }
+          }
+        }
     }
 
     post {
