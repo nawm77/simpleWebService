@@ -81,9 +81,7 @@ pipeline {
             steps {
                 script {
                     echo "Deploying Docker container..."
-                    sh """
-                    COMPOSE_FILE=${COMPOSE_FILE} docker-compose up -d --build
-                    """
+                    sh "docker-compose up -d"
                 }
             }
         }
