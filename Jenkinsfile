@@ -81,7 +81,7 @@ pipeline {
             steps {
                 script {
                     echo "Deploying Docker container..."
-                    sh "docker-compose up -d"
+                    sh "docker compose up -d"
                 }
             }
         }
