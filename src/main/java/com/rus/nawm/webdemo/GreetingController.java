@@ -12,4 +12,9 @@ public class GreetingController {
   public ResponseEntity<String> getGreeting() {
     return ResponseEntity.ok("Hello, World!");
   }
+
+  @GetMapping("/welcome")
+  public ResponseEntity<String> getWelcome() {
+    return ResponseEntity.ok("Welcome to the server!");
+  }
 }
