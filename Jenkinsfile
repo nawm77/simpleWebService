@@ -37,11 +37,12 @@ pipeline {
                 '''
             }
         }
-        stage('Checkout') {
-            steps{
-                    git branch: "${params.BRANCH}", credentialsId: 'github', url: 'git@github.com:nawm77/simpleWebService.git'
-                }
-        }
+
+//         stage('Checkout') {
+//             steps{
+//                     git branch: "${params.BRANCH}", credentialsId: 'github', url: 'git@github.com:nawm77/simpleWebService.git'
+//                 }
+//         }
 
         stage('Docker Login') {
             steps {
